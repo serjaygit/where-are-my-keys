@@ -25,10 +25,10 @@ export default function MemberCard({ item }: Props) {
 
       <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-4">
         <div>
-          <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">
+          <p className="mb-3 text-sm font-medium uppercase tracking-wider text-primary">
             {role}
           </p>
-          <h2 className="font-serif text-xl font-semibold uppercase leading-tight md:text-2xl">
+          <h2 className="font-mono text-lg font-semibold uppercase leading-tight">
             {name}
           </h2>
         </div>

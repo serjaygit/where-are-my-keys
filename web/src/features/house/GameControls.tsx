@@ -20,7 +20,8 @@ export default function GameControls({ foundCount, onStart }: Props) {
         <div className="flex items-center gap-4">
           <span className="h-px w-8 bg-primary" />
           <span className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-primary">
-            The Room
+            Looks like the Domovyk has hidden some things around the house. Can
+            you find them all?
           </span>
         </div>
         <span className="font-mono text-sm uppercase text-primary">
