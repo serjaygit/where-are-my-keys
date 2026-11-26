@@ -16,7 +16,7 @@ export default function Header() {
     <motion.header
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 1.5, ease: "easeOut" }}
+      transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
       className="fixed inset-x-0 top-0 z-50 bg-primary-foreground/80 border-b border-border backdrop-blur-md"
     >
       <Container>
