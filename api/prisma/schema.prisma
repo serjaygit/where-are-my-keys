@@ -41,6 +41,7 @@ model Enlist {
 
   @@map("enlists")
 }
+<<<<<<< HEAD
 
 model Message {
   id String @id @default(uuid())
@@ -56,3 +57,5 @@ model Message {
 
   @@map("messages")
 }
+=======
+>>>>>>> 78cebd2b66c48db82ea741af7b8cd98dba091183
