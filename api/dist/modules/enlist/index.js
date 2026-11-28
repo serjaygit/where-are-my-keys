@@ -7,12 +7,13 @@ enlistModule.post("/", zValidator("json", userSchema), async (c) => {
     try {
         const data = c.req.valid("json");
         const res = await enlistService.create(data.email, data);
-        return c.json(res, 201);
+        return c.json({
+            success: true,
+            ...res,
+        }, 200);
     }
     catch (error) {
-        if (error instanceof Error && error.message === "Already enlisted") {
-            return c.json({ message: error.message }, 409);
-        }
+        console.error("Enlistment error:", error);
         return c.json({ message: "Internal server error" }, 500);
     }
 });

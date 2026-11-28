@@ -7,5 +7,10 @@
 *
 * 🟢 You can import this file directly.
 */
-// This file is empty because there are no enums in the schema.
-export {};
+export const Subject = {
+    GENERAL: 'GENERAL',
+    FESTIVAL_SCREENING: 'FESTIVAL_SCREENING',
+    PRESS_INTERVIEW: 'PRESS_INTERVIEW',
+    CREATIVE_COLLABORATION: 'CREATIVE_COLLABORATION',
+    OTHER: 'OTHER'
+};

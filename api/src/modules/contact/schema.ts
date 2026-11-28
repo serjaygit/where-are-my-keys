@@ -12,3 +12,5 @@ export const contactSchema = z.object({
   ]),
   content: z.string().trim().min(1, "Content field cannot be empty"),
 });
+
+export type ContactBody = z.infer<typeof contactSchema>;
