@@ -21,11 +21,11 @@ const fontMono = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://where-are-my-keys.vercel.app/"),
 
   title: {
     default: "Where Are My Keys? | Official Movie Website",
-    template: "%s | Where Are My Keys?",
+    template: "Where Are My Keys?",
   },
 
   description:
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "Explore the world of Where Are My Keys? Discover the story, cast, and behind-the-scenes moments.",
     siteName: "Where Are My Keys?",
     type: "website",
-    images: ["/og-image.png"],
+    images: ["/favicon.ico"],
   },
 
   robots: {

@@ -7,6 +7,14 @@ datasource db {
   provider = "postgresql"
 }
 
+enum Subject {
+  GENERAL
+  FESTIVAL_SCREENING
+  PRESS_INTERVIEW
+  CREATIVE_COLLABORATION
+  OTHER
+}
+
 model User {
   id String @id @default(uuid())
 
@@ -32,4 +40,19 @@ model Enlist {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("enlists")
+}
+
+model Message {
+  id String @id @default(uuid())
+
+  name String
+  email String
+  
+  subject Subject @default(GENERAL)
+  content String
+
+  createdAt DateTime @default(now() ) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("messages")
 }

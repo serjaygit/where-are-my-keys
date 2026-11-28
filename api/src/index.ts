@@ -2,6 +2,7 @@ import { serve } from "@hono/node-server";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { enlistModule } from "./modules/enlist/index.js";
+import { contactModule } from "./modules/contact/index.js";
 
 const app = new Hono();
 
@@ -23,6 +24,7 @@ app.use(
 app.get("/", (c) => c.json({ message: "Hello Hono!" }));
 
 app.route("/enlist", enlistModule);
+app.route("/contact", contactModule);
 
 const port = Number(process.env.PORT) || 4000;
 

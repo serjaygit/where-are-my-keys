@@ -1,6 +1,6 @@
 import Container from "@/components/shared/Container";
 import PageHeading from "@/components/shared/PageHeading";
-import ContactForm from "@/features/contact/ContactForm";
+import ContactForm from "@/features/contact/ui/ContactForm";
 
 export default function ContactPage() {
   return (
